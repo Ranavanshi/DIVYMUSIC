@@ -14,21 +14,21 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", ": ™°‌ 🫧 𝘽𝙡𝙤𝙨𝙨𝙤𝙢𓃭 ⃟ᴍᴜsɪᴄ⛦⃕͜༆")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", ": ™°‌𝞺𝞬𝞪𝞻𝞴𝙞 𝟀 𝙢𝞵𝙨𝙞𝞻")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "5059737154").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/PRADHAN474/OXYMUSIC")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Ranavanshi/DivyMUSIC")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BWANDARLOK")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/PRADHAN474")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/chatventure_club")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/chatventure_club")
 
-SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
+SUPPORT_HEHE = SUPPORT_GROUP.split("https://t.me/chatventure_club")[1]
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "180"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/56d1760224589ee370186.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "http://telegra.ph/file/6c9d453b593b89c4de831.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://graph.org/file/b0825ba6490d2aa6a6afd.jpg",
+    "http://telegra.ph/file/f415045b3c1792033212e.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
@@ -130,9 +130,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://graph.org/file/b0825ba6490d2aa6a6afd.jpg"
+            PING_IMG_URL = "http://telegra.ph/file/f415045b3c1792033212e.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://graph.org/file/b0825ba6490d2aa6a6afd.jpg"
+            START_IMG_URL = "http://telegra.ph/file/6c9d453b593b89c4de831.jpg"
